@@ -1,26 +1,33 @@
-const marks = [90, 90, 90];
+const marks = [70, 50, 80];
 
-console.log(calculateGrade(marks));
 
 function calculateGrade(marks) {
-     let sum = 0;
-     for(let mark of marks)
-     sum += mark;
-     let average = sum / marks.length;
+     const average = calculateAverage(marks)
       
-     if (average >= 0 && average <= 59){
+     if (average < 60){
               console.log("F");
      }
-     else if (average >= 60 && average <= 69) {
+     else if (average < 70) {
         console.log("D");
     }
-     else if (average >= 70 && average <= 79) {
+     else if (average < 80) {
         console.log("C");
     }
-     else if (average >= 80 && average <= 89) {
+     else if (average < 90) {
         console.log("B");
     }
       else {
         console.log("A");
     }
 }
+
+console.log(calculateGrade(marks));
+
+function calculateAverage(array){
+    let sum = 0;
+    for (let value of array)
+    sum += value;
+    return sum / array.length;
+}
+
+

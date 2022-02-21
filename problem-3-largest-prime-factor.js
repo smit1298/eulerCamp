@@ -10,7 +10,7 @@ function largestPrimeFactor(number) {
 
       max = prime;
  
-     number = number / prime;
+     number /= prime;
    
  }
  else prime++; 
@@ -18,6 +18,7 @@ function largestPrimeFactor(number) {
 
   }
   
-return max;
-
+console.log(max);
 }
+
+largestPrimeFactor(20)
