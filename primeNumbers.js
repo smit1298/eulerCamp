@@ -1,4 +1,4 @@
-showPrimes(10);
+showPrimes(15);
 
 function showPrimes(limit) {
   for (let number = 2; number <= limit; number++) 
