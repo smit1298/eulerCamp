@@ -11,4 +11,4 @@ function sumSquareDifference(n) {
   return difference;
 }
 
-sumSquareDifference(10);
+sumSquareDifference(n);
